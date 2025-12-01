@@ -1,15 +1,11 @@
-import * as fs from "fs";
-import * as path from "path";
+import loadInput from "../utils/loadInput";
 
 interface Move {
   direction: string;
   move: number;
 }
 
-const fileInput: Move[] = fs
-  .readFileSync(path.join(__dirname, "input.txt"), "utf8")
-  .split("\n")
-  .map((line: string) => {
+const fileInput = loadInput(__dirname, "input.txt").map((line: string) => {
     const move = line.slice(0, 1);
     const distance = line.slice(1);
     return { direction: move, move: Number(distance) };
