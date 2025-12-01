@@ -1,0 +1,24 @@
+{
+  "name": "aoc2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx run.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domjanik/aoc2025.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domjanik/aoc2025/issues"
+  },
+  "homepage": "https://github.com/domjanik/aoc2025#readme",
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "tsx": "^4.21.0",
+    "typescript": "5.6"
+  }
+}
